@@ -9,7 +9,15 @@ namespace Prime.Services
             if (candidate == 1) 
             { 
                 return false;
+            }
+            if (candidate == 2)
+            {
+        	return false;
             } 
+            if (candidate == 3)
+            {
+        	return false;
+            }
             throw new NotImplementedException("Please create a test first");
         }
     }

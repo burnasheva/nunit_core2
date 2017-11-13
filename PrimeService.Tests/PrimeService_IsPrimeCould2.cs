@@ -4,21 +4,21 @@ using Prime.Services;
 namespace Prime.UnitTests.Services
 {
     [TestFixture]
-    public class PrimeService_IsPrimeShould
+    public class PrimeService_IsPrimeCould2
     {
         private readonly PrimeService _primeService;
 
-        public PrimeService_IsPrimeShould()
+        public PrimeService_IsPrimeCould2()
         {
             _primeService = new PrimeService();
         }
 
         [Test]
-        public void ReturnFalseGivenValueOf1()
+        public void ReturnFalseGivenValueOf3()
         {
-            var result = _primeService.IsPrime(1);
+            var result = _primeService.IsPrime(3);
 
-            Assert.IsFalse(result, $"1 should not be prime");
+            Assert.IsFalse(result, $"3 should not be prime");
         }
     }
 }
