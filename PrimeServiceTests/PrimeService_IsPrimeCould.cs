@@ -20,5 +20,14 @@ namespace Prime.UnitTests.Services
 
             Assert.IsFalse(result, $"2 should not be prime");
         }
+        
+        [Test]
+        [Ignore("temporary ignored test")]
+        public void IgnoredTest()
+        {
+            var result = _primeService.IsPrime(2);
+
+            Assert.IsFalse(result, $"2 should not be prime");
+        }
     }
 }
