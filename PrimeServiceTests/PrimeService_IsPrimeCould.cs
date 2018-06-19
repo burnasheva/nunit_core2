@@ -1,3 +1,4 @@
+using System.Threading;
 using NUnit.Framework;
 using Prime.Services;
 
@@ -28,6 +29,14 @@ namespace Prime.UnitTests.Services
             var result = _primeService.IsPrime(2);
 
             Assert.IsFalse(result, $"2 should not be prime");
+        }
+
+        [Test]
+        public void SleepTest()
+        {
+            Thread.Sleep(120000);
+            
+            Assert.IsTrue(true, "мы подождали 2 минуты");
         }
     }
 }
