@@ -1,3 +1,4 @@
+using System;
 using NUnit.Framework;
 using Prime.Services;
 
@@ -16,6 +17,10 @@ namespace Prime.UnitTests.Services
         [Test]
         public void ReturnFalseGivenValueOf3()
         {
+            Console.WriteLine("some stdOut text");
+            Console.Error.WriteLine("some stdErr text");
+            TestContext.WriteLine("message from TestContext");
+            
             var result = _primeService.IsPrime(3);
 
             Assert.IsFalse(result, $"3 should not be prime");
@@ -24,6 +29,10 @@ namespace Prime.UnitTests.Services
         [Test]
         public void ThisTestShouldFail()
         {
+            Console.WriteLine("some stdOut text");
+            Console.Error.WriteLine("some stdErr text");
+            TestContext.WriteLine("message from TestContext");
+            
             var result = _primeService.IsPrime(10);
 
             Assert.IsFalse(result, $"10 should not be prime");
