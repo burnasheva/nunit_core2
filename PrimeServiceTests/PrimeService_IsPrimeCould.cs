@@ -44,7 +44,9 @@ namespace Prime.UnitTests.Services
         public void SleepTest()
         {
             Console.WriteLine("some stdOut text");
+            
             Console.Error.WriteLine("some stdErr text");
+            
             TestContext.WriteLine("message from TestContext");
             
             Thread.Sleep(120000);
