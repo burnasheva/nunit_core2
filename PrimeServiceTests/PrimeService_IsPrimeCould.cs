@@ -4,6 +4,7 @@ using Prime.Services;
 
 namespace Prime.UnitTests.Services
 {
+
     [TestFixture]
     public class PrimeService_IsPrimeCould
     {
