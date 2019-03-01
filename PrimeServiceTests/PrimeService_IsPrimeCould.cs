@@ -8,7 +8,6 @@ namespace Prime.UnitTests.Services
     public class PrimeService_IsPrimeCould
     {
         private readonly PrimeService _primeService;
-
         public PrimeService_IsPrimeCould()
         {
             _primeService = new PrimeService();
